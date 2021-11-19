@@ -1,0 +1,45 @@
+
+  .home-inp { 
+    width: 70%;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 15px;
+    border: 1px solid teal;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+  }
+  
+  @media (min-width: 280px) {
+    .home-inp { 
+      width: 70%;
+    }
+    .movie-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 760px) {
+    .home-inp { 
+      width: 80%;
+    }
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .home-inp { 
+      width: 90%;
+    }
+    .movie-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  

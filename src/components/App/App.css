@@ -1,0 +1,38 @@
+main {
+    background-color: #ffffff;
+    color: #000;
+    max-width: 1280px;
+    min-height: 890px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #000;
+    max-width: 1280px;
+    color: rgb(255, 255, 255);
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.page__current {
+    border: 2px solid orange;
+    font-weight: bold;
+}
