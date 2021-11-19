@@ -1,6 +1,5 @@
 {
   "name": "my-app-minikinopoisk",
-  "homepage": "http://yuribenjamin.github.io/minikinopoisk/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
