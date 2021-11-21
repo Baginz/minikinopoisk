@@ -7,8 +7,11 @@ const About = () => {
         <div>
             <h1>KEKW</h1>
             <p>Это приложение создано личинкой Web разработчика</p>
-            <button onClick={() => navigate(-1)}>Go back</button>
-            <Link to="/" >Go home</Link>
+            <button className="back-button" onClick={() => navigate(-1)}>Go back</button>
+
+            <Link to="/" ><button className="back-button" >
+                Go home
+            </button ></Link>
         </div>
     );
 };

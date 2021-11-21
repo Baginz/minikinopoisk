@@ -7,8 +7,10 @@ const Contact = () => {
         <div>
             <h1>Contact</h1>
             <p>Contact</p>
-            <button onClick={() => navigate(-1)}>Go back</button>
-            <Link to="/" >Go home</Link>
+            <button className="back-button" onClick={() => navigate(-1)}>Go back</button>
+            <Link to="/" ><button className="back-button" >
+                Go home
+            </button ></Link>
         </div>
     );
 };

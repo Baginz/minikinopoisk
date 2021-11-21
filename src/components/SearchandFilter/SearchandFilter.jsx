@@ -21,17 +21,16 @@ const SearchandFilter = ({ setQuery, setPage, setLanguage, year, setYear, adult,
 
     return (
         <>
-            <form onSubmit={submitHandler} style={{ textAlign: "center" }}>
-                <input className="home-inp" placeholder="Введите название фильма" type="text" ref={inputRefSearch} />
-                <MyButton>Search</MyButton>
+            <form className='example' onSubmit={submitHandler} style={{ textAlign: "center", marginBottom: "30px" }}>
+                <input placeholder="Введите название фильма"  name="search" ref={inputRefSearch} />
+                <button type="submit">Поиск </button>
             </form>
             <div className="filter">
 
                 <div>
-                    <p style={{ textAlign: "center" }}>Язык</p>
-                    <label >
+                    <h3 style={{ textAlign: "center", marginBottom: "13px" }}>Язык</h3>
+                    <label className="input-container">Ru
                         <input
-                            className='with-gap'
                             name='type'
                             type='radio'
                             data-type='Ru'
@@ -41,11 +40,10 @@ const SearchandFilter = ({ setQuery, setPage, setLanguage, year, setYear, adult,
                             }}
                             checked={state === 'ru'}
                         />
-                        <span>RU</span>
+                       <span class="checkmark"></span>
                     </label>
-                    <label>
+                    <label className="input-container">Us
                         <input
-                            className='with-gap'
                             name='type'
                             type='radio'
                             data-type='en-US'
@@ -55,23 +53,23 @@ const SearchandFilter = ({ setQuery, setPage, setLanguage, year, setYear, adult,
                             }}
                             checked={state === 'en-US'}
                         />
-                        <span>US</span>
+                      <span class="checkmark"></span>
                     </label>
                 </div>
                 <div>
-                    <p style={{ textAlign: "center" }}>Include Adult</p>
+                    <h3 style={{textAlign: "center", marginBottom: "23px" }}>Для взрослых</h3>
                     <MySelect
                         value={adult}
                         onChange={setAdult}
 
                         options={[
-                            { value: true, name: 'yes' },
-                            { value: false, name: 'no' },
+                            { value: true, name: 'Да' },
+                            { value: false, name: 'Нет' },
                         ]}
                     />
                 </div>
                 <div>
-                    <p style={{ textAlign: "center" }}>Год выхода</p>
+                    <h3 style={{ textAlign: "center", marginBottom: "23px"  }}>Год выхода</h3>
                     <MySelect
                         value={year}
                         onChange={setYear}

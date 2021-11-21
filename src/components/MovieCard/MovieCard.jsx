@@ -11,8 +11,8 @@ const MovieCard = ({ movie }) => {
     return (
         <div className="card">
             <img src={movie.poster_path ? urlPoster + movie.poster_path : notf} alt="" className="src" onClick={() => navigate(`/${movie?.id}/`)} />
-            <div className="container">
-                <h2 onClick={() => navigate(`/${movie?.id}/`)} style={{ cursor: "pointer" }}>{movie?.title}</h2>
+            <div className="card-container">
+                <h2 onClick={() => navigate(`/${movie?.id}/`)} style={{ cursor: "pointer", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{movie?.title}</h2>
                 <p>{movie?.release_date}</p>
                 <h3>Оценка  {movie?.vote_average}  <span style={{fontWeight: "300", fontSize: "12px"}}>{movie?.vote_count}</span></h3>
             </div>

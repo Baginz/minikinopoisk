@@ -14,11 +14,20 @@ const Login = () => {
 
     return (
         <div>
-            <h1>Страница для логина</h1>
+            <h1></h1>
             <form onSubmit={login}>
-                <MyInput type="text" placeholder="Введите логин" />
-                <MyInput type="password" placeholder="Введите пароль" />
-                <MyButton>Войти</MyButton>
+                <div className="login-container ">
+                    <label for="uname"><b>Логин</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required />
+
+                    <label for="psw"><b>Пароль</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required />
+                    <label>
+                        <input type="checkbox" name="remember" /> Запомнить меня
+                    </label>
+                    <button  className="login-button" type="submit">Войти</button>
+
+                </div>
             </form>
         </div>
     );

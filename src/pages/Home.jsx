@@ -43,7 +43,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1 style={{ textAlign: "center" }}>Кинопоиск</h1>
+            <h1 style={{ textAlign: "center", marginBottom: "50px"}}>Кинопоиск</h1>
             <SearchandFilter setQuery={setQuery} setPage={setPage} setLanguage={setLanguage} year={year} setYear={setYear} adult={adult} setAdult={setAdult}/>
             <MovieList isLoading={isLoading} movies={movies} />
             {Object.keys(movies).length === 0 || movies?.results?.length === 0

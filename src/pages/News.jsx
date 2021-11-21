@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, Link} from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const News = () => {
     const navigate = useNavigate();
@@ -7,8 +7,11 @@ const News = () => {
         <div>
             <h1>News</h1>
             <p>News</p>
-            <button onClick={() => navigate(-1)}>Go back</button>
-            <Link to="/" >Go home</Link>
+            <button className="back-button" onClick={() => navigate(-1)}>Go back</button>
+
+            <Link to="/" ><button className="back-button" >
+                Go home
+            </button ></Link>
         </div>
     )
 }

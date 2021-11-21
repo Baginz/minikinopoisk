@@ -34,31 +34,39 @@ const MovieId = () => {
         <>
             {isLoading
                 ? <Loader />
-                : <div style={{display: "flex", justifyContent: "space-between"}}>
-                    <div className="card">
-                        <img src={movie.poster_path ? urlPoster + movie.poster_path : notf} alt="" className="src" />
-                        <div className="container">
-                            <h2 >{movie?.title}</h2>
-                            <p>{movie?.release_date}</p>
-                            <h3>Оценка  {movie?.vote_average}  <span style={{fontWeight: "300", fontSize: "12px"}}>{movie?.vote_count}</span></h3>
+                : <>
+                    <div style={{ display: "flex" }}>
+                        <div className="card">
+                            <img src={movie.poster_path ? urlPoster + movie.poster_path : notf} alt="" className="src" />
+                            <div className="card-container">
+                                <h2 style={{ cursor: "pointer", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{movie?.title}</h2>
+                                <p>{movie?.release_date}</p>
+                                <h3>Оценка  {movie?.vote_average}  <span style={{ fontWeight: "300", fontSize: "12px" }}>{movie?.vote_count}</span></h3>
+                            </div>
+                        </div>
+                        <br />
+                        <div className="movie-info">
+                            <h1>О фильме</h1>
+                            <h2>Оригинальное название </h2><p>  {movie?.original_title}</p>
+                            <h2>Id </h2><p>  {movie?.id}</p>
+                            <h2>IMDB Id</h2><p>  {movie?.imdb_id}</p> 
+                            <h2>Статус</h2><p>  {movie?.status}</p>
+                            <h2>Дата выхода</h2><p>  {movie?.release_date}</p>
+                            <h2>Сайт</h2><p>  {movie?.homepage}</p>
+                            <h2>Время</h2><p>  {movie?.runtime} мин.</p>
+                            <h2>Бюджет</h2><p>  {movie?.budget}</p>
+                            <h2>Сборы в мире</h2><p>  {movie?.revenue}</p>
+                            <h2>Популярность</h2><p>  {movie?.popularity}</p>
+                            <h2>Описание</h2><p>  {movie?.overview}</p>
+
                         </div>
                     </div>
-                    <br />
-                    <div className="card">
-                        <p>budget  {movie?.budget}</p>
-                        <p>homepage  {movie?.homepage}</p>
-                        <p>id  {movie?.id}</p>
-                        <p>imdb_id  {movie?.imdb_id}</p>
-                        <p>original_title  {movie?.original_title}</p>
-                        <p>overview  {movie?.overview}</p>
-                        <p>popularity  {movie?.popularity}</p>
-                        <p>revenue  {movie?.revenue}</p>
-                        <p>status  {movie?.status}</p>
+                    <button className="back-button" onClick={() => navigate(-1)}>Go back</button>
 
-                    </div>
-                    <button onClick={() => navigate(-1)}>Go back</button>
-                    <Link to="/" >Go home</Link>
-                </div>
+                    <Link to="/" ><button className="back-button" >
+                        Go home
+                    </button ></Link>
+                </>
             }
 
         </>
