@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useFetching } from "../hooks/useFetching";
-import useDidMountEffect from "../hooks/useDidMountEffect";
 import SearchandFilter from "../components/SearchandFilter/SearchandFilter";
 import MovieList from "../components/MovieList/MovieList";
 import Pagination from "../components/UI/pagination/Pagination";
