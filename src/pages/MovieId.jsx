@@ -54,7 +54,7 @@ const MovieId = () => {
                             <h2>Дата выхода</h2><p>  {movie?.release_date}</p>
                             <h2>Сайт</h2><p>  {movie?.homepage}</p>
                             <h2>Время</h2><p>  {movie?.runtime} мин.</p>
-                            <h2>Бюджет</h2><p>  {movie?.budget}</p>
+                            <h2>Бюджет</h2><p>  {movie?.budget} $</p>
                             <h2>Сборы в мире</h2><p>  {movie?.revenue}</p>
                             <h2>Популярность</h2><p>  {movie?.popularity}</p>
                             <h2>Описание</h2><p>  {movie?.overview}</p>

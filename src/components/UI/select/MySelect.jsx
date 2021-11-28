@@ -3,7 +3,7 @@ import './MySelect.css'
 
 const MySelect = ({options, defaultValue, value, onChange}) => {
     return (
-        <select 
+        <select className="select-css"
             value={value}
             onChange={event => onChange(event.target.value)}
         >

@@ -41,7 +41,7 @@ const SearchandFilter = ({ setQuery, setPage, setLanguage, year, setYear, adult,
                         />
                        <span class="checkmark"></span>
                     </label>
-                    <label className="input-container">Us
+                    <label className="input-container">En
                         <input
                             name='type'
                             type='radio'

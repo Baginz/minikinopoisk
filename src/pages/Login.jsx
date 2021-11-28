@@ -24,9 +24,9 @@ const Login = () => {
                         <input type="checkbox" name="remember" /> Запомнить меня
                     </label>
                     <button  className="login-button" type="submit">Войти</button>
-
                 </div>
             </form>
+            <p>Вводите любые данные(не реализовано на бэке)</p>
         </div>
     );
 };
