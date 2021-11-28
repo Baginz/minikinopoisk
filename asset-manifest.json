@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/minikinopoisk/static/css/main.305afae4.chunk.css",
-    "main.js": "/minikinopoisk/static/js/main.422e0185.chunk.js",
-    "main.js.map": "/minikinopoisk/static/js/main.422e0185.chunk.js.map",
+    "main.js": "/minikinopoisk/static/js/main.c284a73e.chunk.js",
+    "main.js.map": "/minikinopoisk/static/js/main.c284a73e.chunk.js.map",
     "runtime-main.js": "/minikinopoisk/static/js/runtime-main.8393e612.js",
     "runtime-main.js.map": "/minikinopoisk/static/js/runtime-main.8393e612.js.map",
     "static/js/2.5bccff67.chunk.js": "/minikinopoisk/static/js/2.5bccff67.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8393e612.js",
     "static/js/2.5bccff67.chunk.js",
     "static/css/main.305afae4.chunk.css",
-    "static/js/main.422e0185.chunk.js"
+    "static/js/main.c284a73e.chunk.js"
   ]
 }
